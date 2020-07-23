@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 8080;
-// const port = 3000;
+// const port = 8080;
+const port = 3000;
 
-app.use(express.static(path.join(__dirname, '../client')));
+app.use('/', express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json());
 app.use(cors());
 
